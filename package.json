@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/YuriSS/iChoose/issues"
   },
-  "homepage": "https://github.com/YuriSS/iChoose#readme"
+  "homepage": "https://github.com/YuriSS/iChoose#readme",
+  "dependencies": {
+    "data.maybe": "^1.2.3",
+    "express": "^4.17.1",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "uuid": "^8.2.0"
+  }
 }
