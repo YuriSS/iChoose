@@ -1,7 +1,7 @@
 const express = require("express")
 const pkg = require("../package.json")
 const { pluck } = require("./helpers/")
-const { restaurants, users, votes } = require("./data")
+const { restaurants : restaurantsRoutes, users : usersRoutes, votes : votesRoutes } = require("./routes/")
 
 const PORT = process.env.PORT || 3000
 
@@ -16,17 +16,9 @@ app.get("/", function(req, res) {
   })
 })
 
-app.get("/restaurants", function(req, res) {
-  res.json({ restaurants })
-})
-
-app.get("/users", function(req, res) {
-  res.json({ users })
-})
-
-app.get("/votes", function(req, res) {
-  res.json({ votes })
-})
+app.use("/restaurants", restaurantsRoutes)
+app.use("/users", usersRoutes)
+app.use("/votes", votesRoutes)
 
 const server = app.listen(PORT, function() {
   console.log(`iChoose server listening on ${server.address().port}`)

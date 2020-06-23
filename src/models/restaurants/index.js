@@ -1,0 +1,22 @@
+const { K, log } = require("../../helpers")
+const { idKey, nameKey } = require("./selectors")
+
+const data = ["1", "2", "3", "4", "5"]
+  .map(n => ({
+    [idKey()]: n,
+    [nameKey()]: `Restaurante ${n}`
+  }))
+
+const model = {}
+
+model.list = K(data)
+
+model.get = id => (
+  Promise.resolve(model.list())
+    .then(data => data.find(restaurant => restaurant[idKey()] === id))
+    .then(restaurant => (
+      restaurant ? restaurant : Promise.reject(`Não existe restaurante de ID ${id}`)
+    ))
+)
+
+module.exports = model
