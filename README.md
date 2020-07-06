@@ -12,7 +12,13 @@
 * Node >= v14
 
 
-## Configurações
+## Iniciando a aplicação
+Rode a sequencia de comandos de dentro do diretório da aplicação para iniciar.
+
+npm i
+npm run build
+npm start
+
 Por padrão o servidor irá rodar na porta 80, caso tenha intenção de mudar a porta, sete uma variável de ambiente BACKEND_PORT com o valor desejado.
 
 Os arquivos que são gerados pelo build montam as url com valores relativos. Caso tenha intenção de mudar o hostname das request (Caso queira executar o servidor de desenvolvimento, por exemplo), sete uma variável de ambiente REACT_HOST com o valor desejado.
