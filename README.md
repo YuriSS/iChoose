@@ -16,7 +16,9 @@
 Rode a sequencia de comandos de dentro do diretório da aplicação para iniciar.
 
 npm i
+
 npm run build
+
 npm start
 
 Por padrão o servidor irá rodar na porta 80, caso tenha intenção de mudar a porta, sete uma variável de ambiente BACKEND_PORT com o valor desejado.
