@@ -41,6 +41,5 @@ Os arquivos que são gerados pelo build montam as url com valores relativos. Cas
 
 ## Acessos
 
-Usuário admin
-username: admin
-senha: 1
+* Usuário admin
+username: admin / password: 1
