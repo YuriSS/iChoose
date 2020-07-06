@@ -1,12 +1,15 @@
 {
-  "name": "iChoose",
-  "version": "1.0.0",
+  "name": "ichoose",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node src/backend/server.js",
+    "start_backend": "nodemon src/backend/server.js",
+    "start_frontend": "react-scripts start",
+    "build_frontend": "react-scripts build",
+    "eject_frontend": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -15,15 +18,37 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YuriSS/iChoose/issues"
-  },
-  "homepage": "https://github.com/YuriSS/iChoose#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "data.maybe": "^1.2.3",
     "express": "^4.17.1",
-    "jest": "^26.1.0",
     "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.1",
+    "tachyons": "^4.12.0",
     "uuid": "^8.2.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
