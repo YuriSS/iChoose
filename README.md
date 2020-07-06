@@ -19,17 +19,12 @@ Os arquivos que são gerados pelo build montam as url com valores relativos. Cas
 
 
 ## Scripts
-⋅⋅* npm run test
-Rodar testes uniários
+* npm run test - Rodar testes uniários
 
-⋅⋅* npm start
-Iniciar o servidor da aplicação com os arquivos de build
+* npm start - Iniciar o servidor da aplicação com os arquivos de build
 
-⋅⋅* npm run start_backend
-Iniciar o servidor da aplicação com Watcher e autoreload
+* npm run start_backend - Iniciar o servidor da aplicação com Watcher e autoreload
 
-⋅⋅* npm run start_frontend
-Iniciar um servidor de desenvolvimeto para o frontend com Watcher e autoreload
+* npm run start_frontend - Iniciar um servidor de desenvolvimeto para o frontend com Watcher e autoreload
 
-⋅⋅* npm run build_frontend
-Iniciar rotina de build dos arquivos estáticos
+* npm run build_frontend - Iniciar rotina de build dos arquivos estáticos
