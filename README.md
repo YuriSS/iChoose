@@ -28,3 +28,19 @@ Os arquivos que são gerados pelo build montam as url com valores relativos. Cas
 * npm run start_frontend - Iniciar um servidor de desenvolvimeto para o frontend com Watcher e autoreload
 
 * npm run build_frontend - Iniciar rotina de build dos arquivos estáticos
+
+## Funcionamento
+
+* Ao entrar na aplicação, crie um usuário e depois logue
+
+* Usuários comuns e admin podem ver o restaurante escolhido do dia (caso exista um)
+
+* Usuários comuns e admin podem votar em um restaurante
+
+* Usuário admin pode encerrar a votação atual
+
+## Acessos
+
+Usuário admin
+username: admin
+senha: 1
